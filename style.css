@@ -1,0 +1,299 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #111c32;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Home Section */
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    color: #38bdf8;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home-content h2 {
+    font-size: 27px;
+    color: #cbd5e1;
+}
+
+.home-content p {
+    max-width: 550px;
+    margin: 20px 0;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* About and Other Sections */
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h1 {
+    color: #38bdf8;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Projects Section */
+
+.projects {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.projects h1 {
+    color: #38bdf8;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.project-intro {
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+/* Project Cards Layout */
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Project Card */
+
+.project-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.project-card h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.project-status {
+    display: inline-block;
+    background-color: #0f172a;
+    color: #38bdf8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+
+/* Project Cards */
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.project-card h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card span {
+    color: #38bdf8;
+    font-size: 14px;/* Footer */
+
+.footer {
+    background-color: #111c32;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin: 8px 0;
+}
+    font-weight: bold;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        min-height: auto;
+        padding: 70px 7%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h2 {
+        font-size: 21px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 55px 7%;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+}
+
